@@ -768,7 +768,7 @@ code {
 
   object-fit: cover;
 
-  object-position: center 15%;
+  object-position: center 50%;
 
   display: block;
 
@@ -884,10 +884,10 @@ code {
 
 .floating-card span { font-size: 1rem; }
 
-/* Repositioned to account for new padding on hero-card-wrap */
-.fc-1 { top: 20px; left: 4px; animation-delay: 0s; }
-.fc-2 { top: 90px; right: 0px; animation-delay: 1.2s; }
-.fc-3 { bottom: 72px; left: 0px; animation-delay: 2.4s; }
+/* Floating pill composition — final balanced positioning */
+.fc-1 { top: 20px;    left: -8px;   animation-delay: 0s; }
+.fc-2 { top: 255px;   right: -12px; animation-delay: 1.2s; }
+.fc-3 { bottom: 72px; left: -8px;   animation-delay: 2.4s; }
 
 /* ============================================
    STATS SECTION
