@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Artikel dan catatan Arif Prima Rahadian seputar teknologi, cybersecurity, akademik, dan organisasi." />
+  <meta name="keywords" content="Arif Prima Rahadian, Artikel, Teknologi, Cybersecurity, ITPLN, Blog" />
+  <meta name="author" content="Arif Prima Rahadian" />
+  <meta name="theme-color" content="#8b5cf6" />
+  <meta property="og:title" content="News — Arif Prima Rahadian" />
+  <meta property="og:description" content="Kumpulan artikel seputar teknologi, pengalaman organisasi, dan refleksi akademik." />
+  <meta property="og:type" content="website" />
+  <title>News — Arif Prima Rahadian</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%238b5cf6'/%3E%3Ctext x='50' y='68' text-anchor='middle' font-family='Arial,sans-serif' font-weight='700' font-size='42' fill='%23fff'%3EAPR%3C/text%3E%3C/svg%3E" />
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-brand">
+        <span class="brand-icon">APR</span>
+        <span class="brand-name">Arif Prima</span>
+      </a>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="news.html" class="nav-link active">News</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <a href="contact.html" class="nav-btn">Hubungi Saya</a>
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+
+    <section class="inner-hero">
+      <div class="section-wrap">
+        <span class="section-tag">Artikel &amp; Catatan</span>
+        <h1 class="inner-title">Tulisan dari Meja<br /><em>Belajar Saya</em></h1>
+        <p class="inner-subtitle">Kumpulan artikel seputar teknologi, pengalaman organisasi, dan refleksi akademik yang semoga bermanfaat.</p>
+      </div>
+    </section>
+
+    <section class="news-page-section">
+      <div class="section-wrap">
+
+        <div class="news-filter-row" id="newsFilterRow" role="group" aria-label="Filter artikel">
+          <button class="filter-pill active" data-filter="all" type="button">Semua</button>
+          <button class="filter-pill" data-filter="Teknologi" type="button">Teknologi</button>
+          <button class="filter-pill" data-filter="Akademik" type="button">Akademik</button>
+          <button class="filter-pill" data-filter="Organisasi" type="button">Organisasi</button>
+          <button class="filter-pill" data-filter="Cybersecurity" type="button">Cybersecurity</button>
+          <button class="filter-pill" data-filter="Gaya Hidup" type="button">Gaya Hidup</button>
+        </div>
+
+        <div class="news-featured-card" data-category="Akademik" id="featuredCard">
+          <div class="nfc-visual">
+            <div class="nfc-thumb thumb-1">
+              <span>&#128737;</span>
+            </div>
+          </div>
+          <div class="nfc-body">
+            <span class="news-tag">Akademik &middot; Featured</span>
+            <h2><a href="news-detail.html">Memahami Konsep Dasar Keamanan Jaringan dalam Sistem Informasi Modern</a></h2>
+            <p>Sebagai mahasiswa Sistem Informasi yang sedang mengambil mata kuliah Keamanan Jaringan, saya merangkum pemahaman saya tentang konsep fundamental network security yang wajib diketahui setiap calon profesional IT. Artikel ini membahas CIA Triad, jenis-jenis ancaman, hingga pentingnya kesadaran keamanan digital.</p>
+            <div class="nfc-meta">
+              <span>20 Mei 2025</span>
+              <span class="dot-sep">&middot;</span>
+              <span>9 menit baca</span>
+            </div>
+            <a href="news-detail.html" class="btn-primary">Baca Selengkapnya</a>
+          </div>
+        </div>
+
+        <div class="news-cards-grid" id="newsCardsGrid">
+
+          <article class="news-card" data-category="Teknologi">
+            <div class="nc-thumb thumb-2"><span>&#128013;</span></div>
+            <div class="nc-body">
+              <span class="news-tag">Teknologi</span>
+              <h3><a href="news-detail.html">Belajar Python untuk Pemula: Dari Sintaks Dasar hingga Pengolahan Data Sederhana</a></h3>
+              <p>Perjalanan belajar Python dari nol, mulai dari variabel, tipe data, loop, fungsi, hingga pengolahan data sederhana menggunakan library pandas.</p>
+              <div class="nc-meta">
+                <span>15 Mei 2025</span>
+                <span class="dot-sep">&middot;</span>
+                <span>7 menit baca</span>
+              </div>
+              <a href="news-detail.html" class="nc-link">Baca &rarr;</a>
+            </div>
+          </article>
+
+          <article class="news-card" data-category="Organisasi">
+            <div class="nc-thumb thumb-3"><span>&#129309;</span></div>
+            <div class="nc-body">
+              <span class="news-tag">Organisasi</span>
+              <h3><a href="news-detail.html">Refleksi Menjadi Relawan Pengajar di Gerakan Sahabat Mengajar 2025</a></h3>
+              <p>Pelajaran berharga yang saya dapatkan selama menjadi relawan pengajar untuk anak-anak tingkat dasar dalam program GSM semester 3.</p>
+              <div class="nc-meta">
+                <span>10 Mei 2025</span>
+                <span class="dot-sep">&middot;</span>
+                <span>5 menit baca</span>
+              </div>
+              <a href="news-detail.html" class="nc-link">Baca &rarr;</a>
+            </div>
+          </article>
+
+          <article class="news-card" data-category="Teknologi">
+            <div class="nc-thumb thumb-4"><span>&#128225;</span></div>
+            <div class="nc-body">
+              <span class="news-tag">Teknologi</span>
+              <h3><a href="news-detail.html">Pengenalan Internet of Things: Konsep, Arsitektur, dan Studi Kasus Nyata</a></h3>
+              <p>Rangkuman pemahaman dari mata kuliah Pemrograman IoT tentang konsep dasar, arsitektur sistem IoT, dan contoh implementasinya di kehidupan sehari-hari.</p>
+              <div class="nc-meta">
+                <span>5 Mei 2025</span>
+                <span class="dot-sep">&middot;</span>
+                <span>6 menit baca</span>
+              </div>
+              <a href="news-detail.html" class="nc-link">Baca &rarr;</a>
+            </div>
+          </article>
+
+          <article class="news-card" data-category="Gaya Hidup">
+            <div class="nc-thumb thumb-5"><span>&#127947;</span></div>
+            <div class="nc-body">
+              <span class="news-tag">Gaya Hidup</span>
+              <h3><a href="news-detail.html">Bodyweight Training: Olahraga Efektif Tanpa Alat untuk Mahasiswa Sibuk</a></h3>
+              <p>Panduan memulai bodyweight training sebagai gaya hidup sehat untuk mahasiswa yang punya waktu dan ruang terbatas namun tetap ingin aktif bergerak.</p>
+              <div class="nc-meta">
+                <span>28 April 2025</span>
+                <span class="dot-sep">&middot;</span>
+                <span>5 menit baca</span>
+              </div>
+              <a href="news-detail.html" class="nc-link">Baca &rarr;</a>
+            </div>
+          </article>
+
+          <article class="news-card" data-category="Cybersecurity">
+            <div class="nc-thumb thumb-6"><span>&#128272;</span></div>
+            <div class="nc-body">
+              <span class="news-tag">Cybersecurity</span>
+              <h3><a href="news-detail.html">Mengenal Social Engineering: Ancaman Keamanan yang Sering Diabaikan</a></h3>
+              <p>Penjelasan tentang social engineering sebagai salah satu ancaman siber terbesar yang menargetkan manusia, bukan sistem, beserta cara melindungi diri dari serangan ini.</p>
+              <div class="nc-meta">
+                <span>20 April 2025</span>
+                <span class="dot-sep">&middot;</span>
+                <span>6 menit baca</span>
+              </div>
+              <a href="news-detail.html" class="nc-link">Baca &rarr;</a>
+            </div>
+          </article>
+
+          <article class="news-card" data-category="Akademik">
+            <div class="nc-thumb thumb-7"><span>&#127891;</span></div>
+            <div class="nc-body">
+              <span class="news-tag">Akademik</span>
+              <h3><a href="news-detail.html">Tips Belajar Efektif sebagai Mahasiswa Semester Awal di Perguruan Tinggi</a></h3>
+              <p>Strategi belajar yang terbukti efektif dari pengalaman pribadi sebagai mahasiswa baru, mulai dari manajemen waktu, cara mencatat, hingga membangun kebiasaan belajar yang konsisten.</p>
+              <div class="nc-meta">
+                <span>12 April 2025</span>
+                <span class="dot-sep">&middot;</span>
+                <span>5 menit baca</span>
+              </div>
+              <a href="news-detail.html" class="nc-link">Baca &rarr;</a>
+            </div>
+          </article>
+
+        </div>
+
+        <div class="load-more-row" id="loadMoreRow">
+          <p class="filter-empty-msg" id="filterEmptyMsg" style="display:none;" role="status">Tidak ada artikel dalam kategori ini.</p>
+          <button class="btn-outline" id="loadMoreBtn" type="button">Muat Lebih Banyak</button>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-main">
+        <div class="footer-brand">
+          <a href="index.html#home" class="brand-icon" aria-label="Kembali ke beranda">APR</a>
+          <div>
+            <strong>Arif Prima Rahadian</strong>
+            <span>Mahasiswa Sistem Informasi &middot; ITPLN</span>
+          </div>
+        </div>
+        <p class="footer-copy" id="footerCopy">&copy; 2026 Arif Prima Rahadian. All rights reserved.</p>
+        <nav class="footer-nav" aria-label="Footer navigation">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="news.html">News</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
+      <div class="footer-divider"></div>
+      <div class="footer-bottom">
+        <span class="footer-tagline">Built with passion in Jakarta &middot; HTML, CSS &amp; JavaScript</span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      'use strict';
+
+      /* ── Mobile menu toggle ── */
+      var menuToggle = document.getElementById('menuToggle');
+      var navMenu    = document.getElementById('navMenu');
+
+      if (menuToggle && navMenu) {
+        menuToggle.addEventListener('click', function () {
+          var isOpen = navMenu.classList.toggle('nav-menu-open');
+          menuToggle.classList.toggle('menu-toggle-active');
+          menuToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+        });
+
+        navMenu.querySelectorAll('.nav-link').forEach(function (link) {
+          link.addEventListener('click', function () {
+            navMenu.classList.remove('nav-menu-open');
+            menuToggle.classList.remove('menu-toggle-active');
+            menuToggle.setAttribute('aria-expanded', 'false');
+          });
+        });
+
+        document.addEventListener('click', function (e) {
+          if (!navMenu.contains(e.target) && !menuToggle.contains(e.target)) {
+            navMenu.classList.remove('nav-menu-open');
+            menuToggle.classList.remove('menu-toggle-active');
+            menuToggle.setAttribute('aria-expanded', 'false');
+          }
+        });
+      }
+
+      /* ── Dynamic footer year ── */
+      var yearEl = document.getElementById('footerCopy');
+      if (yearEl) {
+        yearEl.innerHTML = '&copy; ' + new Date().getFullYear() + ' Arif Prima Rahadian. All rights reserved.';
+      }
+
+      /* ── News Filter Functionality ── */
+      var filterRow     = document.getElementById('newsFilterRow');
+      var cardsGrid     = document.getElementById('newsCardsGrid');
+      var featuredCard  = document.getElementById('featuredCard');
+      var loadMoreBtn   = document.getElementById('loadMoreBtn');
+      var loadMoreRow   = document.getElementById('loadMoreRow');
+      var filterEmptyMsg = document.getElementById('filterEmptyMsg');
+
+      if (filterRow && cardsGrid) {
+        var filterBtns = filterRow.querySelectorAll('.filter-pill');
+        var allCards   = cardsGrid.querySelectorAll('.news-card');
+
+        filterBtns.forEach(function (btn) {
+          btn.addEventListener('click', function () {
+            var filterVal = btn.getAttribute('data-filter');
+
+            /* Update active button state */
+            filterBtns.forEach(function (b) { b.classList.remove('active'); });
+            btn.classList.add('active');
+
+            var hasVisible = false;
+
+            /* Filter cards */
+            allCards.forEach(function (card) {
+              var cat = card.getAttribute('data-category');
+              if (filterVal === 'all' || cat === filterVal) {
+                card.style.display = '';
+                card.style.animation = 'fadeInUp 0.35s ease forwards';
+                hasVisible = true;
+              } else {
+                card.style.display = 'none';
+              }
+            });
+
+            /* Featured card visibility */
+            if (featuredCard) {
+              var featCat = featuredCard.getAttribute('data-category');
+              if (filterVal === 'all' || filterVal === featCat) {
+                featuredCard.style.display = '';
+                featuredCard.style.animation = 'fadeInUp 0.35s ease forwards';
+                if (filterVal !== 'all') { hasVisible = true; }
+              } else {
+                featuredCard.style.display = 'none';
+              }
+            }
+
+            /* Empty state */
+            if (filterEmptyMsg) {
+              filterEmptyMsg.style.display = hasVisible ? 'none' : 'block';
+            }
+
+            /* Load more: only visible on "all" */
+            if (loadMoreBtn) {
+              loadMoreBtn.style.display = filterVal === 'all' ? '' : 'none';
+            }
+          });
+        });
+      }
+
+      /* ── Load more (demo) ── */
+      if (loadMoreBtn) {
+        loadMoreBtn.addEventListener('click', function () {
+          loadMoreBtn.textContent = 'Tidak ada artikel lagi';
+          loadMoreBtn.disabled = true;
+          loadMoreBtn.style.cursor = 'not-allowed';
+        });
+      }
+
+    }());
+  </script>
+
+</body>
+</html>

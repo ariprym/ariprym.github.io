@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Memahami Konsep Dasar Keamanan Jaringan dalam Sistem Informasi Modern — Artikel oleh Arif Prima Rahadian." />
+  <meta name="keywords" content="Keamanan Jaringan, Cybersecurity, CIA Triad, Sistem Informasi, ITPLN" />
+  <meta name="author" content="Arif Prima Rahadian" />
+  <meta name="theme-color" content="#8b5cf6" />
+  <meta property="og:title" content="Keamanan Jaringan — Arif Prima Rahadian" />
+  <meta property="og:description" content="Konsep fundamental network security yang wajib diketahui setiap calon profesional IT." />
+  <meta property="og:type" content="article" />
+  <title>Keamanan Jaringan — Arif Prima Rahadian</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%238b5cf6'/%3E%3Ctext x='50' y='68' text-anchor='middle' font-family='Arial,sans-serif' font-weight='700' font-size='42' fill='%23fff'%3EAPR%3C/text%3E%3C/svg%3E" />
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-brand">
+        <span class="brand-icon">APR</span>
+        <span class="brand-name">Arif Prima</span>
+      </a>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="news.html" class="nav-link active">News</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <a href="contact.html" class="nav-btn">Hubungi Saya</a>
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <div class="article-page">
+
+      <div class="article-main">
+
+        <div class="article-top">
+          <nav class="breadcrumb" aria-label="Breadcrumb">
+            <a href="index.html">Home</a>
+            <span aria-hidden="true">/</span>
+            <a href="news.html">News</a>
+            <span aria-hidden="true">/</span>
+            <span aria-current="page">Keamanan Jaringan</span>
+          </nav>
+
+          <span class="news-tag">Akademik</span>
+
+          <h1 class="article-title">Memahami Konsep Dasar Keamanan Jaringan dalam Sistem Informasi Modern</h1>
+
+          <div class="article-byline">
+            <div class="byline-author">
+              <div class="byline-avatar" aria-hidden="true">APR</div>
+              <div>
+                <strong>Arif Prima Rahadian</strong>
+                <span>Mahasiswa SI Semester 4 &middot; ITPLN</span>
+              </div>
+            </div>
+            <div class="byline-meta">
+              <span>20 Mei 2025</span>
+              <span class="dot-sep">&middot;</span>
+              <span>9 menit baca</span>
+            </div>
+          </div>
+
+          <div class="article-cover-img thumb-1">
+            <span class="cover-emoji">&#128737;</span>
+            <p>Keamanan Jaringan &amp; Sistem Informasi</p>
+          </div>
+        </div>
+
+        <div class="article-body">
+
+          <h2>Pendahuluan</h2>
+          <p>Keamanan jaringan adalah salah satu topik yang paling relevan di era digital saat ini. Sebagai mahasiswa Sistem Informasi yang sedang mengambil mata kuliah Keamanan Jaringan di semester 4, saya merasakan betapa pentingnya memahami fondasi konsep ini sebelum masuk ke implementasi teknis yang lebih dalam.</p>
+          <p>Artikel ini merupakan rangkuman pemahaman saya setelah mengikuti perkuliahan dan melakukan eksplorasi mandiri. Tujuannya sederhana: menyajikan konsep-konsep fundamental network security dengan bahasa yang mudah dipahami oleh sesama mahasiswa.</p>
+
+          <blockquote>
+            <p>&ldquo;Keamanan bukan tentang membuat sistem yang tidak bisa ditembus, melainkan tentang membuat biaya untuk menembus sistem lebih tinggi daripada nilainya.&rdquo;</p>
+          </blockquote>
+
+          <h2>Apa Itu Keamanan Jaringan?</h2>
+          <p>Keamanan jaringan (network security) adalah sekumpulan kebijakan, prosedur, dan teknologi yang dirancang untuk melindungi jaringan komputer dari akses tidak sah, penyalahgunaan, modifikasi, atau penolakan layanan. Secara sederhana, ini adalah cara kita menjaga agar data dan sistem tetap aman dari ancaman baik dari dalam maupun luar organisasi.</p>
+          <p>Dalam konteks sistem informasi, keamanan jaringan mencakup perlindungan terhadap infrastruktur jaringan (router, switch, server), data yang berpindah melalui jaringan, serta pengguna yang mengakses sistem tersebut.</p>
+
+          <h2>CIA Triad: Fondasi Keamanan Informasi</h2>
+          <p>Konsep paling mendasar dalam keamanan informasi adalah CIA Triad, yang terdiri dari tiga pilar utama:</p>
+
+          <div class="article-card-row">
+            <div class="ac-card">
+              <span class="ac-icon">&#128274;</span>
+              <h4>Confidentiality</h4>
+              <p>Memastikan bahwa informasi hanya dapat diakses oleh pihak yang berwenang. Contoh implementasi: enkripsi data, kontrol akses, autentikasi pengguna.</p>
+            </div>
+            <div class="ac-card">
+              <span class="ac-icon">&#9989;</span>
+              <h4>Integrity</h4>
+              <p>Memastikan bahwa data tidak diubah secara tidak sah selama penyimpanan atau transmisi. Contoh: hash function, digital signature, checksums.</p>
+            </div>
+            <div class="ac-card">
+              <span class="ac-icon">&#9889;</span>
+              <h4>Availability</h4>
+              <p>Memastikan bahwa sistem dan data selalu tersedia bagi pengguna yang berhak kapan pun dibutuhkan. Contoh: redundansi, backup, proteksi DDoS.</p>
+            </div>
+          </div>
+
+          <h2>Jenis-Jenis Ancaman Jaringan</h2>
+          <p>Memahami jenis ancaman adalah langkah pertama dalam membangun sistem keamanan yang efektif. Berikut beberapa ancaman yang paling umum ditemui:</p>
+
+          <h3>1. Malware</h3>
+          <p>Malware (malicious software) adalah perangkat lunak berbahaya yang dirancang untuk merusak, mencuri data, atau mengambil kendali sistem. Jenisnya beragam, mulai dari virus, worm, trojan, ransomware, hingga spyware. Salah satu serangan ransomware terbesar yang pernah terjadi adalah WannaCry pada tahun 2017 yang menginfeksi lebih dari 200.000 komputer di 150 negara.</p>
+
+          <h3>2. Phishing</h3>
+          <p>Serangan phishing adalah upaya penipuan untuk mendapatkan informasi sensitif seperti username, password, atau data kartu kredit dengan menyamar sebagai entitas terpercaya. Phishing biasanya dilakukan melalui email, pesan teks, atau situs web palsu yang tampak identik dengan situs asli.</p>
+
+          <h3>3. Man-in-the-Middle (MitM)</h3>
+          <p>Serangan MitM terjadi ketika penyerang diam-diam mengintersepsi komunikasi antara dua pihak. Penyerang dapat mencuri data, memodifikasi pesan, atau menyuntikkan konten berbahaya. Serangan ini sering terjadi di jaringan WiFi publik yang tidak terenkripsi.</p>
+
+          <h3>4. DDoS (Distributed Denial of Service)</h3>
+          <p>Serangan DDoS bertujuan untuk membuat layanan tidak tersedia dengan membanjiri server atau jaringan target dengan traffic yang sangat besar. Serangan ini biasanya melibatkan banyak komputer yang telah dikompromikan (botnet) untuk menyerang secara bersamaan.</p>
+
+          <div class="code-block">
+            <div class="code-header">
+              <span class="code-tag">Contoh: Proteksi Rate-Limit ICMP via iptables (Sisi Server)</span>
+            </div>
+            <pre><code># Proteksi server dari ICMP flood menggunakan iptables
+# Hanya terima ping dengan batas wajar, tolak sisanya
+
+iptables -A INPUT -p icmp --icmp-type echo-request \
+  -m limit --limit 1/s --limit-burst 4 -j ACCEPT
+iptables -A INPUT -p icmp --icmp-type echo-request -j DROP
+
+# Verifikasi aturan yang aktif:
+iptables -L INPUT -v -n</code></pre>
+          </div>
+
+          <h2>Lapisan Keamanan Jaringan</h2>
+          <p>Keamanan jaringan yang baik tidak mengandalkan satu mekanisme saja, melainkan menggunakan pendekatan berlapis (defense in depth). Setiap lapisan memberikan perlindungan tambahan sehingga jika satu lapisan ditembus, lapisan lainnya masih melindungi sistem.</p>
+          <p>Lapisan pertama dimulai dari keamanan fisik seperti penguncian server room. Lapisan berikutnya adalah keamanan jaringan melalui firewall dan IDS/IPS. Kemudian keamanan host melalui antivirus dan patch management. Lalu keamanan aplikasi melalui input validation dan enkripsi. Dan terakhir adalah keamanan data melalui enkripsi database dan backup reguler.</p>
+
+          <h2>Relevansi bagi Mahasiswa Sistem Informasi</h2>
+          <p>Sebagai calon profesional di bidang sistem informasi, memahami keamanan jaringan bukan sekadar nilai di transkrip. Ini adalah kompetensi kritis yang akan selalu dibutuhkan di dunia kerja. Setiap sistem informasi yang kita bangun atau kelola memiliki potensi kerentanan yang perlu diidentifikasi dan dimitigasi.</p>
+          <p>Saya pribadi merasa bahwa mempelajari cybersecurity membuka cara pandang baru tentang bagaimana sistem digital bekerja, bagaimana data mengalir, dan di mana titik-titik lemah yang sering dieksploitasi. Ini membuat saya menjadi pengembang dan analis sistem yang lebih berhati-hati dan bertanggung jawab.</p>
+
+          <h2>Kesimpulan</h2>
+          <p>Keamanan jaringan adalah bidang yang luas dan terus berkembang seiring kemunculan ancaman-ancaman baru. Namun, fondasi konseptualnya tetap sama: CIA Triad, pemahaman tentang jenis ancaman, dan penerapan pertahanan berlapis adalah kunci untuk membangun sistem yang lebih aman.</p>
+          <p>Bagi rekan mahasiswa yang belum mengambil mata kuliah ini, saya sangat merekomendasikan untuk mulai mengeksplorasi topik ini secara mandiri. Banyak sumber belajar gratis yang tersedia, mulai dari dokumentasi resmi, platform seperti TryHackMe, hingga kursus di berbagai platform edukasi online.</p>
+
+          <div class="article-tags-row">
+            <span>Keamanan Jaringan</span>
+            <span>Cybersecurity</span>
+            <span>CIA Triad</span>
+            <span>Sistem Informasi</span>
+            <span>ITPLN</span>
+          </div>
+
+        </div>
+
+        <div class="article-bottom-nav">
+          <a href="news.html" class="abn-back">&larr; Kembali ke Semua Artikel</a>
+          <a href="news-detail.html" class="abn-next">Artikel Berikutnya &rarr;</a>
+        </div>
+
+      </div>
+
+      <aside class="article-sidebar" aria-label="Sidebar artikel">
+        <div class="sidebar-box">
+          <h4>Penulis</h4>
+          <div class="sb-author">
+            <div class="byline-avatar" aria-hidden="true">APR</div>
+            <div>
+              <strong>Arif Prima Rahadian</strong>
+              <p>Mahasiswa SI Semester 4, ITPLN. Minat pada cybersecurity, IoT, dan machine learning.</p>
+            </div>
+          </div>
+          <a href="about.html" class="btn-outline sb-btn">Lihat Profil Lengkap</a>
+        </div>
+
+        <div class="sidebar-box">
+          <h4>Artikel Lainnya</h4>
+          <ul class="sb-related">
+            <li><a href="news-detail.html">Belajar Python untuk Pemula</a></li>
+            <li><a href="news-detail.html">Refleksi Relawan GSM 2025</a></li>
+            <li><a href="news-detail.html">Pengenalan Internet of Things</a></li>
+            <li><a href="news-detail.html">Mengenal Social Engineering</a></li>
+          </ul>
+        </div>
+
+        <div class="sidebar-box sb-cta">
+          <h4>Ada Pertanyaan?</h4>
+          <p>Diskusikan topik ini bersama saya.</p>
+          <a href="contact.html" class="btn-primary sb-btn">Hubungi Saya</a>
+        </div>
+
+        <div class="sidebar-box">
+          <h4>Ikuti Saya</h4>
+          <div class="sb-socials">
+            <a href="https://www.instagram.com/ariprim/" target="_blank" rel="noopener noreferrer" class="sb-social-link" aria-label="Instagram @ariprim">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+              Instagram &middot; @ariprim
+            </a>
+            <a href="https://github.com/ariprym" target="_blank" rel="noopener noreferrer" class="sb-social-link" aria-label="GitHub ariprym">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+              GitHub &middot; ariprym
+            </a>
+          </div>
+        </div>
+      </aside>
+
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-main">
+        <div class="footer-brand">
+          <a href="index.html#home" class="brand-icon" aria-label="Kembali ke beranda">APR</a>
+          <div>
+            <strong>Arif Prima Rahadian</strong>
+            <span>Mahasiswa Sistem Informasi &middot; ITPLN</span>
+          </div>
+        </div>
+        <p class="footer-copy" id="footerCopy">&copy; 2026 Arif Prima Rahadian. All rights reserved.</p>
+        <nav class="footer-nav" aria-label="Footer navigation">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="news.html">News</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
+      <div class="footer-divider"></div>
+      <div class="footer-bottom">
+        <span class="footer-tagline">Built with passion in Jakarta &middot; HTML, CSS &amp; JavaScript</span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      'use strict';
+
+      var menuToggle = document.getElementById('menuToggle');
+      var navMenu    = document.getElementById('navMenu');
+
+      if (menuToggle && navMenu) {
+        menuToggle.addEventListener('click', function () {
+          var isOpen = navMenu.classList.toggle('nav-menu-open');
+          menuToggle.classList.toggle('menu-toggle-active');
+          menuToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+        });
+
+        navMenu.querySelectorAll('.nav-link').forEach(function (link) {
+          link.addEventListener('click', function () {
+            navMenu.classList.remove('nav-menu-open');
+            menuToggle.classList.remove('menu-toggle-active');
+            menuToggle.setAttribute('aria-expanded', 'false');
+          });
+        });
+
+        document.addEventListener('click', function (e) {
+          if (!navMenu.contains(e.target) && !menuToggle.contains(e.target)) {
+            navMenu.classList.remove('nav-menu-open');
+            menuToggle.classList.remove('menu-toggle-active');
+            menuToggle.setAttribute('aria-expanded', 'false');
+          }
+        });
+      }
+
+      var yearEl = document.getElementById('footerCopy');
+      if (yearEl) {
+        yearEl.innerHTML = '&copy; ' + new Date().getFullYear() + ' Arif Prima Rahadian. All rights reserved.';
+      }
+
+    }());
+  </script>
+
+</body>
+</html>
