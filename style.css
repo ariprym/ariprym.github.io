@@ -336,13 +336,6 @@ code {
   box-shadow: 0 0 16px rgba(139,92,246,0.35);
 }
 
-/* Ensure <a> brand-icon keeps white text & behaves like the span version */
-a.brand-icon {
-  color: #fff;
-  text-decoration: none;
-  cursor: pointer;
-}
-
 .brand-name {
   font-family: var(--font-head);
   font-size: 1rem;
@@ -662,7 +655,7 @@ a.brand-icon {
   pointer-events: none;
 }
 
-/* Grid transparan belakang */
+/* Grid transparan belakang — ukuran pas dengan foto */
 .hero-card-wrap::after {
   content: '';
   position: absolute;
@@ -672,10 +665,10 @@ a.brand-icon {
 
   transform: translate(-50%, -50%);
 
-  width: 360px;
-  height: 440px;
+  width: 290px;
+  height: 420px;
 
-  border-radius: 28px;
+  border-radius: 22px;
 
   border: 1px solid rgba(139,92,246,0.12);
 
@@ -2671,6 +2664,7 @@ a.brand-icon {
   .hero-right { display: flex; justify-content: center; }
   .hero-card-wrap { padding: 40px 52px 40px 40px; }
   .profile-image-box { width: 240px; height: 320px; }
+  .hero-card-wrap::after { width: 240px; height: 320px; border-radius: 22px; }
 
   .highlight-grid { grid-template-columns: 1fr 1fr; }
   .hl-card.hl-big { grid-row: auto; grid-column: span 2; }
@@ -2739,6 +2733,7 @@ a.brand-icon {
   .hero-card-wrap { padding: 32px 44px 32px 32px; }
   .hero-heading { font-size: 2.8rem; }
   .profile-image-box { width: 220px; height: 300px; }
+  .hero-card-wrap::after { width: 220px; height: 300px; border-radius: 22px; }
   .floating-card { display: none; }
 
   .highlight-grid { grid-template-columns: 1fr; }
@@ -2802,6 +2797,7 @@ a.brand-icon {
 
   .hero-card-wrap { padding: 24px 36px 24px 24px; }
   .profile-image-box { width: 200px; height: 275px; }
+  .hero-card-wrap::after { width: 200px; height: 275px; border-radius: 22px; }
 
   .article-card-row { grid-template-columns: 1fr; }
   .article-byline { flex-direction: column; align-items: flex-start; }
